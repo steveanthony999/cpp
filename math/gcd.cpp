@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 /* The following is an example of using a loop 
 to compute a mathematical quantity. The program
 computes the greatest common divisor (GCD) among
