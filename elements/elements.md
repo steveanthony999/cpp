@@ -20,4 +20,4 @@ The same link above shows some identifiers.
 
 ### Operators
 
-Lke most programming languages, C++ includes the basic operators such as <ul><li>+</li> <li>-</li> <li>\*</li> and <li>/</li></ul> C++ also has it's own operators, such as <ul><li><<</li> <li>::</li> <li>>></li></ul>
+Lke most programming languages, C++ includes the basic operators such as <ul><li>+</li> <li>-</li> <li>\*</li> <li>/</li></ul> C++ also has it's own operators, such as <ul><li><<</li> <li>::</li> <li>>></li></ul>
