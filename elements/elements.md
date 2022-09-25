@@ -12,7 +12,7 @@ https://en.cppreference.com/w/cpp/keyword
 
 In addition to keywords, there are identifiers with special meaning, which may be used as names of objects or functions, but have special meaning in certain contexts.
 
-Examples include: <ul><li>std</li> <li>cin</li> <li>cout</li> <li>endl</li></ul>
+Examples include: <ul><li color="#FF0000">std</li> <li>cin</li> <li>cout</li> <li>endl</li></ul>
 
 Identifiers were created by other programmers to create something meaningful.
 
