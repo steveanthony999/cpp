@@ -46,3 +46,13 @@ Some preprocessor directives are:
 <li>#error</li>
 <li>#pragma</li>
 </ul>
+
+### Arrays
+
+What is an array?
+
+An array is a compound data type, or a structured data type, a data type that's made up of other data types.
+
+An array of ints, strings, etc.
+
+All elements of an array must be of the same type.
