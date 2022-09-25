@@ -58,3 +58,15 @@ An array of ints, strings, etc.
 All elements of an array must be of the same type.
 
 <img width="1913" alt="Screen Shot 2022-09-24 at 8 53 43 PM" src="https://user-images.githubusercontent.com/55010070/192127590-89eb02df-055b-4ad6-a8c6-38e89b7b64f6.png">
+
+How to declare an array...
+
+Element_Type array_name [constant number of elements];
+
+examples:
+
+<ul>
+<li>int test_scores[5];</li>
+<li>const int days_in_year {365};</li>
+<li>double high_temps [days_in_year];</li>
+</ul>
