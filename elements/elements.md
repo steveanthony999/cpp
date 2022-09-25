@@ -70,3 +70,17 @@ examples:
 <li>const int days_in_year {365};</li>
 <li>double high_temps [days_in_year];</li>
 </ul>
+
+The above examples have not been initialized. The contents could be anything.
+
+Best practice is to initial arrays when you declare them.
+
+examples:
+
+<ul>
+<li>int test_scores[5] {100, 98, 99, 86, 92};</li>
+<li>int high_score_per_level[10] {3, 5}; initialize to 3, 5, and the rest 0</li>
+<li>const int days_in_year {365};</li>
+<li>double high_temps [days_in_year] {0}; initialize all to 0</li>
+<li>int rand_array[] {1, 2, 3, 4, 5}; Size automatically calculated</li>
+</ul>
