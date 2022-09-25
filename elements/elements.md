@@ -56,3 +56,5 @@ An array is a compound data type, or a structured data type, a data type that's 
 An array of ints, strings, etc.
 
 All elements of an array must be of the same type.
+
+<img width="1913" alt="Screen Shot 2022-09-24 at 8 53 43 PM" src="https://user-images.githubusercontent.com/55010070/192127590-89eb02df-055b-4ad6-a8c6-38e89b7b64f6.png">
