@@ -21,3 +21,28 @@ The same link above shows some identifiers.
 ### Operators
 
 Lke most programming languages, C++ includes the basic operators such as <ul><li>+</li> <li>-</li> <li>\*</li> <li>/</li></ul> C++ also has it's own operators, such as <ul><li><<</li> <li>::</li> <li>>></li></ul>
+
+### Preprocessor Directives
+
+What is a preprocessor?
+
+The C++ Preprocessor is a program that processes your source code before the compiler sees it. It first strips the comments from the source file and replaces each comment with a single space. Then it looks for preprocessor directives and executes them.
+
+Preprocessor directives are lines in the source code that begin with #.
+
+Some preprocessor directives are:
+
+<ul>
+<li>#include</li>
+<li>#if</li>
+<li>#elif</li>
+<li>#else</li>
+<li>#endif</li>
+<li>#ifdef</li>
+<li>#ifndef</li>
+<li>#define</li>
+<li>#undef</li>
+<li>#line</li>
+<li>#error</li>
+<li>#pragma</li>
+</ul>
