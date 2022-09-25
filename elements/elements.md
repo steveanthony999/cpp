@@ -84,3 +84,5 @@ examples:
 <li>double high_temps [days_in_year] {0}; initialize all to 0</li>
 <li>int rand_array[] {1, 2, 3, 4, 5}; Size automatically calculated</li>
 </ul>
+
+<img width="2249" alt="Screen Shot 2022-09-24 at 9 16 23 PM" src="https://user-images.githubusercontent.com/55010070/192128222-e3d8325a-692d-46cf-b1da-bd149d52c100.png">
