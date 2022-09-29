@@ -69,20 +69,114 @@ using namespace std;
 
 
 // if-else statement
-int main() {
-    int num {};
-    int target {10};
+// int main() {
+//     int num {};
+//     int target {10};
     
-    cout << "Enter an integer to compare to target: ";
-    cin >> num;
+//     cout << "Enter an integer to compare to target: ";
+//     cin >> num;
 
-    if (num >= target)
-    {
-        cout << num << " is greater than or equal to " << target << endl;
-    }
-    else
-    {
-        cout << num << " is less than " << target << endl;
-    }
+//     if (num >= target)
+//     {
+//         cout << num << " is greater than or equal to " << target << endl;
+//     }
+//     else
+//     {
+//         cout << num << " is less than " << target << endl;
+//     }
+// }
+
+
+// nested if statement
+// int main() {
+//     int score_team_a {0};
+//     int score_team_b {0};
+
+//     cout << "Enter the score for team a: ";
+//     cin >> score_team_a;
+
+//     cout << "Enter the score for team b: ";
+//     cin >> score_team_b;
+
+//     if (score_team_a != score_team_b)
+//         if (score_team_a > score_team_b)
+//             cout << "Team a has won!" << endl;
+//         else
+//             cout << "Team b has won!" << endl;
+//     else
+//         cout << "It's a tie!" << endl;
+
+//     // Written in ternary
+//     // score_team_a != score_team_b ? score_team_a > score_team_b ? cout << "Team a has won!" << endl : cout << "Team b has won!" << endl : cout << "It's a tie!" << endl;
+// }
+
+
+// Switch statement
+// int main() {
+    // char random_letter {};
+
+    // cout << "Enter a random letter from (A-F) to receive a compliment: ";
+    // cin >> random_letter;
+
+    // switch (random_letter)
+    // {
+    // case 'a':
+    // case 'A':
+    //     cout << "You are smart!" << endl;
+    //     break;
+    // case 'b':
+    // case 'B':
+    //     cout << "You are beautiful!" << endl;
+    //     break;
+    // case 'c':
+    // case 'C':
+    //     cout << "You are going to rule the world!" << endl;
+    //     break;
+    // case 'd':
+    // case 'D':
+    //     cout << "You are doing great!" << endl;
+    //     break;
+    // case 'e':
+    // case 'E':
+    //     cout << "You are a genius!" << endl;
+    //     break;
+    // case 'f':
+    // case 'F':
+    //     cout << "You are an amazing person!" << endl;
+    //     break;
     
-}
+    // default:
+    //     cout << "Invalid entry" << endl;
+    // }
+
+
+    // Switch with enumeration
+    // enum Direction {
+    //     left, right, up, down
+    // };
+
+    // Direction heading {right};
+
+    // switch (heading)
+    // {
+    // case left:
+    //     cout << "Moving left";
+    //     cout << endl;
+    //     break;
+    // case up:
+    //     cout << "Moving up";
+    //     cout << endl;
+    //     break;
+    // case down:
+    //     cout << "Moving down";
+    //     cout << endl;
+    //     break;
+    // case right:
+    //     cout << "Moving right";
+    //     cout << endl;
+    //     break;
+    
+    // default:
+    //     cout << "No direction chose" << endl;
+    // }
+// }
