@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // Control structures that allow you to control the flow of execution of the program.
@@ -180,3 +181,69 @@ using namespace std;
     //     cout << "No direction chose" << endl;
     // }
 // }
+
+
+// ITERATORS
+
+// for loop
+int main() {
+    // increment by 1
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     cout << i << endl;
+    // }
+    
+
+    // decrement by 1
+    // for (size_t i = 10; i > 0; --i)
+    // {
+    //     cout << i << endl;
+    // }
+    
+    
+    // increment by 2
+    // for (size_t i = 0; i < 100; i += 2)
+    // {
+    //     cout << i << endl;
+    // }
+    
+
+    // increment by 10 and output only what's divisible by 15
+    // for (size_t i = 0; i < 500; i += 10)
+    // {
+    //     if (i % 15 == 0)
+    //     {
+    //         cout << i << endl;
+    //     }
+        
+    // }
+    
+
+    // comma separated for loop
+    // for (size_t i = 0, j = 10; i < 10; ++i, ++ j)
+    // {
+    //     cout << i << " " << j << endl;
+    // }
+    
+
+    // for loop that outputs in a table style
+    // for (size_t i = 0; i <= 100; ++i)
+    // {
+    //     if (i % 10 == 0)
+    //     {
+    //         cout << i << endl;
+    //     } else {
+    //         cout << i << " ";
+    //     }
+        
+    // }
+    
+
+    // loop through vector
+    // vector <int> my_vec {100,200,300,400,500,600,700,800,900,1000};
+
+    // for (size_t i = 0; i < my_vec.size(); ++i)
+    // {
+    //     cout << my_vec.at(i) << " ";
+    // }
+}
