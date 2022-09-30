@@ -246,4 +246,77 @@ int main() {
     // {
     //     cout << my_vec.at(i) << " ";
     // }
+
+
+    // Write code that uses a for loop to calculate the sum of the odd integers from 1 to 15, inclusive. The final result should be stored in an integer variable named sum .
+    // int sum {0};
+    
+    // for (int i = 1; i <= 15; ++i) {
+    //     if (i % 2 == 1) {
+    //         sum += i;
+    //     }
+    // }
+
+    // cout << sum << endl;
+
+
+    // Range based for loops
+    // The idea of range based for loops is to loop through a collection of elements and access each element without having to worry about the length of the collection, incrementing or decrementing looping variables or subscripting indexes.
+
+    // int scores [] {100,200,300};
+
+    // for (int score: scores)
+    // {
+    //     cout << score << endl;
+    // }
+
+
+    // We don't have to explicitly define the variable of the for loop, instead, we can use the auto keyword
+    // int scores [] {100,200,300};
+
+    // for (auto score: scores)
+    // {
+    //     cout << score << endl;
+    // }
+
+
+    // vector <double> temps {98.6, 100.5, 32.7, 99.5};
+
+    // double avg_temp {};
+    // double running_sum {};
+
+    // for (auto temp : temps)
+    // {
+    //     running_sum += temp;
+    // }
+
+    // avg_temp = running_sum / temps.size();
+
+    // cout << avg_temp << " " << running_sum << endl;
+
+
+    // Use range-based for loop to iterate over a string
+    // for (auto i : "Steve")
+    // {
+    //     cout << i << endl;
+    // }
+
+    // string steve {"Steve"};
+
+    // for (auto i : steve)
+    // {
+    //     cout << i << endl;
+    // }
+
+
+    // Use a range-based for loop to loop through a given vector of integers and determine how many elements in the vector are evenly divisible by either 3 or by 5.
+    vector <int> my_vec {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+    int count {0};
+
+    for (auto i : my_vec)
+        if (i % 3 == 0 || i % 5 == 0)
+            count += 1;
+        
+    cout << count << endl;
+    
 }
