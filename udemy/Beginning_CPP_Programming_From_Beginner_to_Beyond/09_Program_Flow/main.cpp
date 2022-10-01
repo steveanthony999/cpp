@@ -310,13 +310,184 @@ int main() {
 
 
     // Use a range-based for loop to loop through a given vector of integers and determine how many elements in the vector are evenly divisible by either 3 or by 5.
-    vector <int> my_vec {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-    int count {0};
+    // vector <int> my_vec {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+    // int count {0};
 
-    for (auto i : my_vec)
-        if (i % 3 == 0 || i % 5 == 0)
-            count += 1;
+    // for (auto i : my_vec)
+    //     if (i % 3 == 0 || i % 5 == 0)
+    //         count += 1;
         
-    cout << count << endl;
+    // cout << count << endl;
+
+
+    // While Loops
+    // The while loop is an example of a pre test loop, because the test is done at the beginning of the loop, so it's possible that if the test fails immediately, the loop body may never execute
+
+    // Simple while loop
+    // int i {1};
+
+    // while (i <= 5)
+    // {
+    //     cout << i << endl;
+    //     ++i;
+    // }
+
+
+    // int i {1};
+
+    // while (i <= 100)
+    // {
+    //     if (i % 2 == 0) {
+    //         cout << i << endl;
+    //     }
+    //     ++i;
+    // }
+
+
+    // while loop with array
+    // int scores[] {100,101,102};
+    // int i {0};
+
+    // while (i < 3)
+    // {
+    //     cout << scores[i] << endl;
+    //     ++i;
+    // }
+    
+    
+    // Input validation
+    // int user_num {};
+
+    // cout << "Enter a number less than 100: ";
+    // cin >> user_num;
+
+    // while (user_num >= 100)
+    // {
+    //     cout << "Enter a number less than 100: ";
+    //     cin >> user_num;
+    // }
+
+    // cout << "Thanks" << endl;
+
+
+    // Testing if user input is in range
+    // int user_num {};
+
+    // cout << "Enter a number between 1 and 5: ";
+    // cin >> user_num;
+
+    // while (user_num <= 1 || user_num >= 5)
+    // {
+    //     cout << "Enter a number between 1 and 5: ";
+    //     cin >> user_num;
+    // }
+
+    // cout << "Thanks!" << endl;
+    
+    
+    // Input validation with boolean flag
+    // bool is_done {false};
+    // int user_num {0};
+
+    // while (!is_done)
+    // {
+    //     cout << "Enter a number between 1 and 5: ";
+    //     cin >> user_num;
+
+    //     if (user_num <= 1 || user_num >= 5)
+    //     {
+    //         cout << "Out of range, try again" << endl;
+    //     } else {
+    //         cout << "Thanks!" << endl;
+    //         is_done = true;
+    //     }
+        
+    // }
+    
+
+    // vector <int> vec {1,6,27,86,54,89,345,767,-99,25,44};
+    // int count {0};
+    // size_t index {0};
+    
+    // while (index < vec.size() && vec.at(index) != -99) {
+    //     ++count;
+    //     ++index;
+    // }
+
+    // cout << count << endl;
+
+
+    // do-while loop
+    // In do-while loops, the condition is checked at the end of each iteration
+
+
+    // input validation
+    // int number {};
+    
+    // do
+    // {
+    //     cout << "Enter a number between 1 and 5: ";
+    //     cin >> number;
+    // } while (number <= 1 || number >= 5);
+    
+    // cout << "Yay!" << endl;
+
+
+    // Area calculation with calculate another
+    // char selection {};
+
+    // do
+    // {
+    //     double width {}, height {};
+
+    //     cout << "Enter width and height, separated by a space: ";
+    //     cin >> width >> height;
+
+    //     double area {width * height};
+
+    //     cout << "The area is " << area << endl;
+
+    //     cout << "Calculate another? (Y/N): ";
+    //     cin >> selection;
+    // } while (selection == 'y' || selection == 'Y');
+
+    // cout << "Have a great day!" << endl;
+    
+
+    // Simple menu system
+    char selection {};
+
+    do
+    {
+        cout << "\n------------------------------" << endl;
+        cout << "1: Add New Journal" << endl;
+        cout << "2: Read Last Journal" << endl;
+        cout << "3: See All Journals" << endl;
+        cout << "4: Delete Last Journal" << endl;
+        cin >> selection;
+
+        switch (selection)
+        {
+        case '1':
+            cout << "Add your journal entry" << endl;
+            break;
+        case '2':
+            cout << "Read your last journal entry" << endl;
+            break;
+        case '3':
+            cout << "See all of your journal entries" << endl;
+            break;
+        case '4':
+            cout << "Delete your last journal entry" << endl;
+            break;
+        case 'q':
+        case 'Q':
+            cout << "Goodbye!" << endl;
+            break;
+        
+        default:
+            cout << "Illegal entry" << endl;
+        }
+    } while (selection != 'q' && selection != 'Q');
     
 }
