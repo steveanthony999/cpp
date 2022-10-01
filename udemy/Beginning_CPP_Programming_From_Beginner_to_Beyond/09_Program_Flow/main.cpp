@@ -557,22 +557,46 @@ int main() {
 
 
     // 2D Vector
-    vector<vector<int>> vector_2d {
-        {1,2,3},
-        {10,20,30,40},
-        {100,200,300,400,500}
-    };
+    // vector<vector<int>> vector_2d {
+    //     {1,2,3},
+    //     {10,20,30,40},
+    //     {100,200,300,400,500}
+    // };
 
-    for (auto vec : vector_2d)
+    // for (auto vec : vector_2d)
+    // {
+    //     for (auto val : vec)
+    //     {
+    //         cout << val << " ";
+    //     }
+    //     cout << endl;
+        
+    // }
+    
+    
+    // Histogram
+    int num_items {};
+    vector <int> items {};
+
+    cout << "How many items do you have: ";
+    cin >> num_items;
+    
+    for (size_t i {1}; i <= num_items; ++i)
     {
-        for (auto val : vec)
+        int item {};
+        cout << "Enter value for item " << i << ": ";
+        cin >> item;
+        items.push_back(item);
+    }
+
+    for (auto val : items)
+    {
+        for (size_t i {1}; i <= val; i++)
         {
-            cout << val << " ";
+            cout << "-";
         }
         cout << endl;
-        
     }
-    
     
     
 }
