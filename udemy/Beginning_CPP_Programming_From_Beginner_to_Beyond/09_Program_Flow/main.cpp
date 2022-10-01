@@ -518,3 +518,61 @@ using namespace std;
 //     }
     
 // }
+
+
+// Nested loops
+int main() {
+    // Multiplication table
+    // for (size_t i = 0; i <=10 ; i++)
+    // {
+    //     for (size_t j = 0; j <=10; j++)
+    //     {
+    //         cout << i << "*" << j << "=" << i * j << endl;
+    //     }
+    //     cout << "-------------------" << endl;
+        
+    // }
+
+
+    // 2D Array - set all elements to 1000
+    // int grid[5][3] {};
+
+    // for (size_t row = 0; row < 5; row++)
+    // {
+    //     for (size_t col = 0; col < 3; col++)
+    //     {
+    //         grid[row][col] = 1000;
+    //     }
+        
+    // }
+
+    // for (size_t row = 0; row < 5; row++)
+    // {
+    //     for (size_t col = 0; col < 3; col++)
+    //     {
+    //         cout << grid[row][col] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // 2D Vector
+    vector<vector<int>> vector_2d {
+        {1,2,3},
+        {10,20,30,40},
+        {100,200,300,400,500}
+    };
+
+    for (auto vec : vector_2d)
+    {
+        for (auto val : vec)
+        {
+            cout << val << " ";
+        }
+        cout << endl;
+        
+    }
+    
+    
+    
+}
