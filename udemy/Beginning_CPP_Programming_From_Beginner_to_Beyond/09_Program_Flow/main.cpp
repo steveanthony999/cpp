@@ -186,7 +186,7 @@ using namespace std;
 // ITERATORS
 
 // for loop
-int main() {
+// int main() {
     // increment by 1
     // for (int i = 0; i < 10; i++)
     // {
@@ -455,39 +455,66 @@ int main() {
     
 
     // Simple menu system
-    char selection {};
+    // char selection {};
 
-    do
-    {
-        cout << "\n------------------------------" << endl;
-        cout << "1: Add New Journal" << endl;
-        cout << "2: Read Last Journal" << endl;
-        cout << "3: See All Journals" << endl;
-        cout << "4: Delete Last Journal" << endl;
-        cin >> selection;
+    // do
+    // {
+    //     cout << "\n------------------------------" << endl;
+    //     cout << "1: Add New Journal" << endl;
+    //     cout << "2: Read Last Journal" << endl;
+    //     cout << "3: See All Journals" << endl;
+    //     cout << "4: Delete Last Journal" << endl;
+    //     cin >> selection;
 
-        switch (selection)
-        {
-        case '1':
-            cout << "Add your journal entry" << endl;
-            break;
-        case '2':
-            cout << "Read your last journal entry" << endl;
-            break;
-        case '3':
-            cout << "See all of your journal entries" << endl;
-            break;
-        case '4':
-            cout << "Delete your last journal entry" << endl;
-            break;
-        case 'q':
-        case 'Q':
-            cout << "Goodbye!" << endl;
-            break;
+    //     switch (selection)
+    //     {
+    //     case '1':
+    //         cout << "Add your journal entry" << endl;
+    //         break;
+    //     case '2':
+    //         cout << "Read your last journal entry" << endl;
+    //         break;
+    //     case '3':
+    //         cout << "See all of your journal entries" << endl;
+    //         break;
+    //     case '4':
+    //         cout << "Delete your last journal entry" << endl;
+    //         break;
+    //     case 'q':
+    //     case 'Q':
+    //         cout << "Goodbye!" << endl;
+    //         break;
         
-        default:
-            cout << "Illegal entry" << endl;
-        }
-    } while (selection != 'q' && selection != 'Q');
+    //     default:
+    //         cout << "Illegal entry" << endl;
+    //     }
+    // } while (selection != 'q' && selection != 'Q');
     
-}
+// }
+
+
+// continue and break statements
+
+// continue - When a continue statement is executed in a loop, no further statements in the body of the loop are executed and control immediately goes directly to the beginning of the loop for the next iteration.  Skip processing in the rest of this iteration and go to the beginning of the loop.  In the case of the for loop and the while loop, the condition will be immediately tested again.
+
+// break - When the break statement is executed in the loop, no further statements in the body are executed and the loop is terminated.  Control is transferred to the statement immediately following the loop.
+
+// int main() {
+//     vector <int> values {1,2,-1,69,420,-99,83,-4, 23, -1, 30};
+
+//     for (auto val : values)
+//     {
+//         if (val == -99)
+//         {
+//             break; // break out of the statement immediately if condition is met
+//         } else if (val == -1)
+//         {
+//             continue; // If condition is met, value is ignored, stops iteration and goes back to the beginning of the loop
+//         } else {
+//             cout << val << endl;
+//         }
+        
+        
+//     }
+    
+// }
