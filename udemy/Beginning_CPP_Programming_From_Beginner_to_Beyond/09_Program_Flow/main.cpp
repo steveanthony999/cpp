@@ -641,10 +641,8 @@ int main() {
                 cout << "[] - the list is empty" << endl;
             } else {
                 cout << "[ ";
-                for (size_t i = 0; i < user_nums.size(); i++)
-                {
-                    cout << user_nums.at(i) << " ";
-                }
+                for (auto num : user_nums)
+                    cout << num << " ";
                 cout << "]" << endl;
             }
             break;
@@ -663,11 +661,9 @@ int main() {
                 cout << "Unable to calculate the mean - no data" << endl;
             } else {
                 temp_entry = 0;
-                for (size_t i = 0; i < user_nums.size(); i++)
-                {
-                    temp_entry = temp_entry + user_nums.at(i);
-                }
-                cout << temp_entry / user_nums.size();
+                for (auto num : user_nums)
+                    temp_entry += num;
+                cout << static_cast<double>(temp_entry) / user_nums.size();
                 cout << endl;
             }
             break;
@@ -678,13 +674,9 @@ int main() {
                 cout << "Unable to determine the smallest number - no data" << endl;
             } else {
                 temp_entry = user_nums.at(0);
-                for (size_t i = 0; i < user_nums.size(); i++)
-                {
-                    if (user_nums.at(i) < temp_entry)
-                    {
-                        temp_entry = user_nums.at(i);
-                    }
-                }
+                for (auto num : user_nums)
+                    if (num < temp_entry)
+                        temp_entry = num;
                 cout << temp_entry;
                 cout << endl;
             }
@@ -696,13 +688,9 @@ int main() {
                 cout << "Unable to determine the largest number - no data" << endl;
             } else {
                 temp_entry = user_nums.at(0);
-                for (size_t i = 0; i < user_nums.size(); i++)
-                {
-                    if (user_nums.at(i) > temp_entry)
-                    {
-                        temp_entry = user_nums.at(i);
-                    }
-                }
+                for (auto num : user_nums)
+                    if (num > temp_entry)
+                        temp_entry = num;
                 cout << temp_entry;
                 cout << endl;
             }
