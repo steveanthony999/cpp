@@ -613,97 +613,97 @@ using namespace std;
 
 
 // Section 9 Challenge
-int main() {
+// int main() {
 
-    char user_entry {};
-    int temp_entry {};
-    vector <int> user_nums {};
+//     char user_entry {};
+//     int temp_entry {};
+//     vector <int> user_nums {};
 
-    do
-    {
-        cout << "\nP: Print numbers" << endl;
-        cout << "A: Add a number" << endl;
-        cout << "M: Display mean of the numbers" << endl;
-        cout << "S: Display the smalles number" << endl;
-        cout << "L: Display the largest number" << endl;
-        cout << "Q: Quit" << endl;
-        cout << endl;
+//     do
+//     {
+//         cout << "\nP: Print numbers" << endl;
+//         cout << "A: Add a number" << endl;
+//         cout << "M: Display mean of the numbers" << endl;
+//         cout << "S: Display the smalles number" << endl;
+//         cout << "L: Display the largest number" << endl;
+//         cout << "Q: Quit" << endl;
+//         cout << endl;
 
-        cin >> user_entry;
-        cout << endl;
+//         cin >> user_entry;
+//         cout << endl;
 
-        switch (user_entry)
-        {
-        case 'p':
-        case 'P':
-            if (user_nums.size() == 0)
-            {
-                cout << "[] - the list is empty" << endl;
-            } else {
-                cout << "[ ";
-                for (auto num : user_nums)
-                    cout << num << " ";
-                cout << "]" << endl;
-            }
-            break;
-        case 'a':
-        case 'A':
-            cout << "Enter a number: ";
-            cin >> temp_entry;
-            user_nums.push_back(temp_entry);
-            cout << endl;
-            cout << temp_entry << " added" << endl;
-            break;
-        case 'm':
-        case 'M':
-            if (user_nums.size() == 0)
-            {
-                cout << "Unable to calculate the mean - no data" << endl;
-            } else {
-                temp_entry = 0;
-                for (auto num : user_nums)
-                    temp_entry += num;
-                cout << static_cast<double>(temp_entry) / user_nums.size();
-                cout << endl;
-            }
-            break;
-        case 's':
-        case 'S':
-            if (user_nums.size() == 0)
-            {
-                cout << "Unable to determine the smallest number - no data" << endl;
-            } else {
-                temp_entry = user_nums.at(0);
-                for (auto num : user_nums)
-                    if (num < temp_entry)
-                        temp_entry = num;
-                cout << temp_entry;
-                cout << endl;
-            }
-            break;
-        case 'l':
-        case 'L':
-            if (user_nums.size() == 0)
-            {
-                cout << "Unable to determine the largest number - no data" << endl;
-            } else {
-                temp_entry = user_nums.at(0);
-                for (auto num : user_nums)
-                    if (num > temp_entry)
-                        temp_entry = num;
-                cout << temp_entry;
-                cout << endl;
-            }
-            break;
-        case 'q':
-        case 'Q':
-            cout << "Goodbye!" << endl;
-            break;
-        default:
-            cout << "Unknown selection, please try again" << endl;
-        }
-    } while (user_entry != 'q' && user_entry != 'Q');
+//         switch (user_entry)
+//         {
+//         case 'p':
+//         case 'P':
+//             if (user_nums.size() == 0)
+//             {
+//                 cout << "[] - the list is empty" << endl;
+//             } else {
+//                 cout << "[ ";
+//                 for (auto num : user_nums)
+//                     cout << num << " ";
+//                 cout << "]" << endl;
+//             }
+//             break;
+//         case 'a':
+//         case 'A':
+//             cout << "Enter a number: ";
+//             cin >> temp_entry;
+//             user_nums.push_back(temp_entry);
+//             cout << endl;
+//             cout << temp_entry << " added" << endl;
+//             break;
+//         case 'm':
+//         case 'M':
+//             if (user_nums.size() == 0)
+//             {
+//                 cout << "Unable to calculate the mean - no data" << endl;
+//             } else {
+//                 temp_entry = 0;
+//                 for (auto num : user_nums)
+//                     temp_entry += num;
+//                 cout << static_cast<double>(temp_entry) / user_nums.size();
+//                 cout << endl;
+//             }
+//             break;
+//         case 's':
+//         case 'S':
+//             if (user_nums.size() == 0)
+//             {
+//                 cout << "Unable to determine the smallest number - no data" << endl;
+//             } else {
+//                 temp_entry = user_nums.at(0);
+//                 for (auto num : user_nums)
+//                     if (num < temp_entry)
+//                         temp_entry = num;
+//                 cout << temp_entry;
+//                 cout << endl;
+//             }
+//             break;
+//         case 'l':
+//         case 'L':
+//             if (user_nums.size() == 0)
+//             {
+//                 cout << "Unable to determine the largest number - no data" << endl;
+//             } else {
+//                 temp_entry = user_nums.at(0);
+//                 for (auto num : user_nums)
+//                     if (num > temp_entry)
+//                         temp_entry = num;
+//                 cout << temp_entry;
+//                 cout << endl;
+//             }
+//             break;
+//         case 'q':
+//         case 'Q':
+//             cout << "Goodbye!" << endl;
+//             break;
+//         default:
+//             cout << "Unknown selection, please try again" << endl;
+//         }
+//     } while (user_entry != 'q' && user_entry != 'Q');
     
 
-    return 0;
-}
+//     return 0;
+// }
