@@ -521,7 +521,7 @@ using namespace std;
 
 
 // Nested loops
-int main() {
+// int main() {
     // Multiplication table
     // for (size_t i = 0; i <=10 ; i++)
     // {
@@ -575,28 +575,147 @@ int main() {
     
     
     // Histogram
-    int num_items {};
-    vector <int> items {};
+    // int num_items {};
+    // vector <int> items {};
 
-    cout << "How many items do you have: ";
-    cin >> num_items;
+    // cout << "How many items do you have: ";
+    // cin >> num_items;
     
-    for (size_t i {1}; i <= num_items; ++i)
-    {
-        int item {};
-        cout << "Enter value for item " << i << ": ";
-        cin >> item;
-        items.push_back(item);
-    }
+    // for (size_t i {1}; i <= num_items; ++i)
+    // {
+    //     int item {};
+    //     cout << "Enter value for item " << i << ": ";
+    //     cin >> item;
+    //     items.push_back(item);
+    // }
 
-    for (auto val : items)
+    // for (auto val : items)
+    // {
+    //     for (size_t i {1}; i <= val; i++)
+    //     {
+    //         cout << "-";
+    //     }
+    //     cout << endl;
+    // }
+    
+
+    // vector <int> vec {1,2,3};
+    // int result {};
+    
+    // for (size_t i {0}; i < vec.size(); ++i) {
+    //     for (size_t j {i+1}; j < vec.size(); ++j) {
+    //         result = result + vec.at(i) * vec.at(j);
+    //     }
+    // }
+
+    // cout << result << endl;
+// }
+
+
+// Section 9 Challenge
+int main() {
+
+    char user_entry {};
+    int temp_entry {};
+    vector <int> user_nums {};
+
+    do
     {
-        for (size_t i {1}; i <= val; i++)
-        {
-            cout << "-";
-        }
+        cout << "\nP: Print numbers" << endl;
+        cout << "A: Add a number" << endl;
+        cout << "M: Display mean of the numbers" << endl;
+        cout << "S: Display the smalles number" << endl;
+        cout << "L: Display the largest number" << endl;
+        cout << "Q: Quit" << endl;
         cout << endl;
-    }
+
+        cin >> user_entry;
+        cout << endl;
+
+        switch (user_entry)
+        {
+        case 'p':
+        case 'P':
+            if (user_nums.size() == 0)
+            {
+                cout << "[] - the list is empty" << endl;
+            } else {
+                cout << "[ ";
+                for (size_t i = 0; i < user_nums.size(); i++)
+                {
+                    cout << user_nums.at(i) << " ";
+                }
+                cout << "]" << endl;
+            }
+            break;
+        case 'a':
+        case 'A':
+            cout << "Enter a number: ";
+            cin >> temp_entry;
+            user_nums.push_back(temp_entry);
+            cout << endl;
+            cout << temp_entry << " added" << endl;
+            break;
+        case 'm':
+        case 'M':
+            if (user_nums.size() == 0)
+            {
+                cout << "Unable to calculate the mean - no data" << endl;
+            } else {
+                temp_entry = 0;
+                for (size_t i = 0; i < user_nums.size(); i++)
+                {
+                    temp_entry = temp_entry + user_nums.at(i);
+                }
+                cout << temp_entry / user_nums.size();
+                cout << endl;
+            }
+            break;
+        case 's':
+        case 'S':
+            if (user_nums.size() == 0)
+            {
+                cout << "Unable to determine the smallest number - no data" << endl;
+            } else {
+                temp_entry = user_nums.at(0);
+                for (size_t i = 0; i < user_nums.size(); i++)
+                {
+                    if (user_nums.at(i) < temp_entry)
+                    {
+                        temp_entry = user_nums.at(i);
+                    }
+                }
+                cout << temp_entry;
+                cout << endl;
+            }
+            break;
+        case 'l':
+        case 'L':
+            if (user_nums.size() == 0)
+            {
+                cout << "Unable to determine the largest number - no data" << endl;
+            } else {
+                temp_entry = user_nums.at(0);
+                for (size_t i = 0; i < user_nums.size(); i++)
+                {
+                    if (user_nums.at(i) > temp_entry)
+                    {
+                        temp_entry = user_nums.at(i);
+                    }
+                }
+                cout << temp_entry;
+                cout << endl;
+            }
+            break;
+        case 'q':
+        case 'Q':
+            cout << "Goodbye!" << endl;
+            break;
+        default:
+            cout << "Unknown selection, please try again" << endl;
+        }
+    } while (user_entry != 'q' && user_entry != 'Q');
     
-    
+
+    return 0;
 }

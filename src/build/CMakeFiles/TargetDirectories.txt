@@ -1,0 +1,3 @@
+/Users/tinymacbook/Desktop/dev/cpp/src/build/CMakeFiles/HelloWorld.dir
+/Users/tinymacbook/Desktop/dev/cpp/src/build/CMakeFiles/edit_cache.dir
+/Users/tinymacbook/Desktop/dev/cpp/src/build/CMakeFiles/rebuild_cache.dir
